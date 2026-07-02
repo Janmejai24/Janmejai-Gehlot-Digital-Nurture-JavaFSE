@@ -1,61 +1,61 @@
-# Exercise 1: Singleton Pattern
+# Exercise 1: Singleton Pattern Example
 
 ## Objective
 
-Ensure that only one instance of Logger exists throughout the application lifecycle.
+Implement the Singleton Design Pattern.
 
----
-
-## Singleton Pattern
-
-Singleton is a Creational Design Pattern.
-
-It restricts the instantiation of a class to exactly one object.
-
-Singleton provides:
-
-• Global access point
-
-• Controlled instance creation
-
-• Memory efficiency
+Singleton ensures that only one object of a class is created and provides a global point of access to that object.
 
 ---
 
 ## Characteristics
 
-Private Constructor
+• Private constructor
 
-Static Instance Variable
+• Static instance variable
 
-Public Static Method
+• Public static method to obtain the instance
+
+• Prevents multiple object creation
 
 ---
 
 ## Advantages
 
-Consistent logging
-
-Reduced memory usage
-
-Easy access to shared resources
+- Memory efficient
+- Controlled access
+- Global accessibility
 
 ---
 
-## Disadvantages
+## Use Cases
 
-Can make testing difficult
+• Logger
 
-Acts similarly to global variables
+• Database Connection
+
+• Configuration Manager
+
+• Cache Manager
 
 ---
 
-## Real-world Examples
+## Time Complexity
 
-Logger
+getInstance()
 
-Database Connections
+O(1)
 
-Configuration Manager
+---
 
-Cache Manager
+## UML Representation
+
+Singleton
+
+------------------
+
+-instance : Singleton
+
++getInstance()
+
++display()

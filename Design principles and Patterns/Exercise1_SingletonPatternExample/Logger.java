@@ -4,9 +4,6 @@ public class Logger {
 
     private Logger() {
 
-        System.out.println(
-                "Logger Instance Created");
-
     }
 
     public static Logger getInstance() {
@@ -25,9 +22,9 @@ public class Logger {
 
         System.out.println(
 
-                "LOG : "
+                "LOG : " + message
 
-                        + message);
+        );
 
     }
 
